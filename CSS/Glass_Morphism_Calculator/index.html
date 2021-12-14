@@ -1,0 +1,76 @@
+<html>
+    
+    <head>
+        <title>GlassMorphism Calculator</title>
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        
+        
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#000000">
+        <meta name="theme-color" content="#ffffff">
+        
+        
+    </head>
+
+    
+    <body>
+        <div class = "container">
+            <form class = "calculator" name = "calc">
+                
+                <input type = "text" readonly class="value" name = "txt">
+                
+                <span class="num clear" onclick="calc.txt.value = ' '"> c </span>
+                
+                <span class="num" onclick="calc.txt.value += '/'"> / </span>
+            
+                <span class="num" onclick="calc.txt.value += '*'"> * </span>
+                
+                <span class="num" onclick="calc.txt.value += '7'"> 7 </span>
+                
+                <span class="num" onclick="calc.txt.value += '8'"> 8 </span>
+                
+                <span class="num" onclick="calc.txt.value += '9'"> 9 </span>
+                
+                <span class="num" onclick="calc.txt.value += '-'"> - </span>
+                
+                <span class="num" onclick="calc.txt.value += '4'"> 4 </span>
+                
+                <span class="num" onclick="calc.txt.value += '5'"> 5 </span>
+                
+                <span class="num" onclick="calc.txt.value += '6'"> 6 </span>
+                
+                <span class="num plus" onclick="calc.txt.value += '+'"> + </span>
+                
+                <span class="num" onclick="calc.txt.value += '1'"> 1 </span>
+                
+                <span class="num" onclick="calc.txt.value += '2'"> 2 </span>
+                
+                <span class="num" onclick="calc.txt.value += '3'"> 3 </span>
+                
+                <span class="num" onclick="calc.txt.value += '0'"> 0 </span>
+                
+                <span class="num" onclick="calc.txt.value += '00'"> 00 </span>
+                
+                <span class="num" onclick="calc.txt.value += '.'"> . </span>
+                
+                <span class="num equal" onclick="calc.txt.value = eval(calc.txt.value)"> = </span>
+            </form>
+        </div>
+    
+        <script type="text/javascript" src="Vanilla.js"></script>
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelector(".container"), {
+                max: 15,
+                speed: 400,
+                glare: true,
+                "max-glare": 0.2,
+                
+            });
+        </script>
+    </body>
+    
+    
+</html>
