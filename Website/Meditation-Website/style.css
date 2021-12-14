@@ -1,0 +1,12 @@
+ body {
+     background-color: black;
+ }
+
+  .white {
+      color: white;
+      text-align: center;
+  }
+
+  #border {
+      border: 2px solid white;
+  }

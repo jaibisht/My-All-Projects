@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Medi-Station</title>
+    <!-- <link rel="icon" href="Medi.jpg"> -->
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Medi-Station</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/Website/Meditation-Website/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Website/Meditation-Website/pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link active" href="/Website/Meditation-Website/queries.html" role="button" aria-expanded="false">
+                  Queries
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Website/Meditation-Website/credits.html">Credits</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <br>
+      <br>
+      <br>
+      <br>
+     
+
+      <div class="border">
+        <div class="main-container container-fluid my-4">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-2">
+                <h2 class="white">Contact me!</h2>
+                <div class="mb-3 row">
+                  <label for="inputName" class="col-sm-2 col-form-label white">Name</label>
+                  <div class="col-sm-10">
+                    <input type="name" class="form-control" id="inputName">
+                  </div>
+                </div>
+                <div class="mb-3 row">
+                  <label for="inputEmail" class="col-sm-2 col-form-label white">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail">
+                  </div>
+                </div>
+                <div class="mb-3 row">
+                  <label for="inputNumber" class="col-sm-2 col-form-label white">Phone Number</label>
+                  <div class="col-sm-10">
+                    <input type="number" class="form-control" id="inputNumber">
+                  </div>
+                </div> 
+                <div class="mb-3 row">
+                  <label for="inputText" class="col-sm-2 col-form-label white">Reason of Contact</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputText">
+                  </div>
+                  <button type="button" id="submit" onclick="mySubmission()" class="btn btn-danger mb-1">Submit</button>
+                  <script>
+                    function mySubmission() {
+                      document.getElementById("submit").innerHTML = "Submitted!";
+                    }
+                    </script>
+      </div>
+
+</body>
+
+</html>
